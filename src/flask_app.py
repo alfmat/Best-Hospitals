@@ -1,7 +1,10 @@
 from flask import Flask
+from flask import render_template
 from get_data import *
-app = Flask(__name__)
+
+
+app = Flask(__name__, template_folder="../templates")
 
 @app.route('/')
 def hello_world():
-    return "First value is " + get_data()['Facility_Name'][0]
+    return render_template('index.html')
