@@ -7,7 +7,6 @@
 function get-performcommit{
     get-menu
     $commit_msg = read-host 'What would you like commit message to be?'
-    git status
     git add .
     git commit -m $commit_msg
     git push -u origin master
