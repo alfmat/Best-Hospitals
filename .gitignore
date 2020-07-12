@@ -1,4 +1,3 @@
 .vscode/
 __pycache__/
-./src/ipynb_checkpoints
-./automated-commit.ps1
+automated-commit.ps1
